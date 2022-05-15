@@ -26,7 +26,7 @@ Eg: 2022_5_15_3.json
 Two approaches are implemented. <br>
 <b> 1. Synchronous approach </b><br>
 The file will be created (I/O) synchronously with the runtime <br>
-EndPoint: http://localhost:8005/v1/user <br>
+EndPoint: http://localhost:8005/v1/user <br> <br>
 <b>2. Asynchronous approach </b><br>
 The file will be created asynchronously in background. <br>
 Endpoint: http://localhost:8005/v2/user
@@ -49,35 +49,4 @@ There are several ways to run a Spring Boot application on your local machine.
 ```
 
 ## Curl
-curl --location --request POST 'http://localhost:8005/v1/user' \
---header 'Content-Type: application/json' \
---data-raw '[
-{
-"ID": 64,
-"UserID": 7,
-"EmployeeID": "CLGAXO",
-"SiteName": "MULGRAVE",
-"BusinessUnitName": "Telstra Logistics - Melbourne",
-"AccountName": "IBM AUSTRALIA LTD",
-"GroupName": "Transport",
-"CategoryName": "Activity - Productive",
-"TypeName": "Transport - Freight Sorting",
-"Date": "2018-02-14",
-"Duration": "00:30",
-"IsProcessed": false
-},
-{
-"ID": 66,
-"UserID": 7,
-"EmployeeID": "e",
-"SiteName": "MULGRAVE",
-"BusinessUnitName": "Telstra Logistics - Melbourne",
-"AccountName": "IBM AUSTRALIA LTD",
-"GroupName": "Picking",
-"CategoryName": "Activity - Productive",
-"TypeName": "Picking - Bulk",
-"Date": "2018-02-15",
-"Duration": "00:30",
-"IsProcessed": false
-}
-]'
+Refer postman collection (etc/postman/UserService.postman_collection.json)
