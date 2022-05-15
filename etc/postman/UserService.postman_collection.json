@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "84cc2a60-b877-4bd8-870a-8c862ed79175",
+		"_postman_id": "983bb0ba-3bcc-45e1-a38b-70a4dba2964e",
 		"name": "UserService",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -49,14 +49,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8005/v1/user",
+					"raw": "http://localhost:8005/v2/user",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8005",
 					"path": [
-						"v1",
+						"v2",
 						"user"
 					]
 				}
