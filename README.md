@@ -10,6 +10,8 @@ For building and running the application you need:
 
 - [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [Maven 3](https://maven.apache.org)
+- Create the following directory for logs
+ <pre>/gowthamy/logs/user-service </pre>
 - Application should be run with the user who is having a permission to create the directory in the specified location
 
 ## Requirement
@@ -44,6 +46,8 @@ There are several ways to run a Spring Boot application on your local machine.
    cd /apps/
    unzip user-service-{version}.zip
    cd ser-service-{version}/bin/
+   change the user who is having a permission to create the directory in the specified location
+   Run the application with JDK 17
    ././user-service-application start.
 
 ```
