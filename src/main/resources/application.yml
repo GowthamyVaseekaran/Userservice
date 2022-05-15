@@ -1,0 +1,19 @@
+server:
+  port: 8005
+
+user:
+  sequence:
+    number:
+      reset:
+        cron: 59 59 23 * * *
+  create:
+    thread:
+      size: 1
+      maxPoolSize: 4
+      keepAliveTimeInMinutes: 1
+      queueSize: 1000
+  repo:
+    file:
+      path: /users/IN/
+
+

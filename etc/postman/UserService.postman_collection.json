@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "84cc2a60-b877-4bd8-870a-8c862ed79175",
+		"name": "UserService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8005/v1/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n{\n\"ID\": 64,\n\"UserID\": 7,\n\"EmployeeID\": \"CLGAXO\",\n\"SiteName\": \"MULGRAVE\",\n\"BusinessUnitName\": \"Telstra Logistics - Melbourne\",\n\"AccountName\": \"IBM AUSTRALIA LTD\",\n\"GroupName\": \"Transport\",\n\"CategoryName\": \"Activity - Productive\",\n\"TypeName\": \"Transport - Freight Sorting\",\n\"Date\": \"2018-02-14\",\n\"Duration\": \"00:30\",\n\"IsProcessed\": false\n},\n{\n\"ID\": 66,\n\"UserID\": 7,\n\"EmployeeID\": \"e\",\n\"SiteName\": \"MULGRAVE\",\n\"BusinessUnitName\": \"Telstra Logistics - Melbourne\",\n\"AccountName\": \"IBM AUSTRALIA LTD\",\n\"GroupName\": \"Picking\",\n\"CategoryName\": \"Activity - Productive\",\n\"TypeName\": \"Picking - Bulk\",\n\"Date\": \"2018-02-15\",\n\"Duration\": \"00:30\",\n\"IsProcessed\": false\n}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8005/v1/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8005",
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8005/v2/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n{\n\"ID\": 64,\n\"UserID\": 7,\n\"EmployeeID\": \"CLGAXO\",\n\"SiteName\": \"MULGRAVE\",\n\"BusinessUnitName\": \"Telstra Logistics - Melbourne\",\n\"AccountName\": \"IBM AUSTRALIA LTD\",\n\"GroupName\": \"Transport\",\n\"CategoryName\": \"Activity - Productive\",\n\"TypeName\": \"Transport - Freight Sorting\",\n\"Date\": \"2018-02-14\",\n\"Duration\": \"00:30\",\n\"IsProcessed\": false\n},\n{\n\"ID\": 66,\n\"UserID\": 7,\n\"EmployeeID\": \"e\",\n\"SiteName\": \"MULGRAVE\",\n\"BusinessUnitName\": \"Telstra Logistics - Melbourne\",\n\"AccountName\": \"IBM AUSTRALIA LTD\",\n\"GroupName\": \"Picking\",\n\"CategoryName\": \"Activity - Productive\",\n\"TypeName\": \"Picking - Bulk\",\n\"Date\": \"2018-02-15\",\n\"Duration\": \"00:30\",\n\"IsProcessed\": false\n}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8005/v1/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8005",
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,34 @@
+<configuration>
+
+    <property name="defaultPattern"
+              value="[%-5level] [%d{yyyy-MM-dd HH:mm:ss.SSS}] %logger{36} - %msg%n"/>
+    <property name="defaultPath" value="/gowthamy/logs/user-service"/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${defaultPattern}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="trace" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${defaultPath}/trace.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${defaultPath}/trace-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${defaultPattern}</pattern>
+        </encoder>
+    </appender>
+
+
+    <logger name="com.gowthamy.userservice" level="trace" additivity="false">
+        <appender-ref ref="trace"/>
+    </logger>
+
+    <root level="info" additivity="false">
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="trace"/>
+    </root>
+</configuration>
